@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza Delivery System", "Pizza Delivery System.csproj", "{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}.Debug|x86.ActiveCfg = Debug|x86
+		{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}.Debug|x86.Build.0 = Debug|x86
+		{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}.Release|x86.ActiveCfg = Release|x86
+		{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5601A172-E38D-4AA7-AEAD-C0BD8746EAB2}
+	EndGlobalSection
+EndGlobal

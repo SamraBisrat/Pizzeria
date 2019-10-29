@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="Pizzeria.UserControlHome"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pizzeria"
+             mc:Ignorable="d" 
+              xmlns:materialDesign ="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TransitioningContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" >
+                <StackPanel>
+                    <TextBlock  FontFamily="Copper Black" Foreground="#FFC00000" FontWeight="Bold"/>
+                    <StackPanel Margin="10">
+                        
+                        <TextBlock Text="Pizzeria" FontSize="25" FontFamily="Champagne &amp; Limousies" FontWeight="Bold" Margin="5"/>
+                        <TextBlock Text="Welcome to our pizzeria" FontSize="20" FontFamily="Champagne &amp; Limousies" Margin="5"/>
+                        <TextBlock  FontSize="18" Width="250" FontFamily="Champagne &amp; Limousies" Margin="5" TextWrapping="Wrap">
+                            You are now logged in into your pizzeria account. Fetch through the menu and order anything you like. You can view teh total price under your orders. You can also request a delivery.
+                        </TextBlock>
+                    </StackPanel>
+
+                </StackPanel>
+                <Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>
+            </StackPanel>
+        </materialDesign:TransitioningContent>
+
+    </Grid>
+</UserControl>

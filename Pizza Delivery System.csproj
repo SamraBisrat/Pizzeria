@@ -1,0 +1,354 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3B3D0837-8F1F-4BC2-B7B0-A52BE81D4D90}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Pizza_Delivery_System</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Pizzeria\DesignTimeBuild\.dtbcache" />
+    <None Include=".vs\Pizzeria\v15\.suo" />
+    <None Include=".vs\Pizzeria\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\Pizzeria\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\Pizzeria\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\Pizzeria\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="packages\MaterialDesignColors.1.1.1\.signature.p7s" />
+    <None Include="packages\MaterialDesignColors.1.1.1\MaterialDesignColors.1.1.1.nupkg" />
+    <None Include="packages\MaterialDesignThemes.2.5.0.1205\.signature.p7s" />
+    <None Include="packages\MaterialDesignThemes.2.5.0.1205\MaterialDesignThemes.2.5.0.1205.nupkg" />
+    <None Include="Pizzeria\App.config" />
+    <None Include="Pizzeria\bin\Debug\Pizzeria.exe.config" />
+    <None Include="Pizzeria\obj\Debug\App.baml" />
+    <None Include="Pizzeria\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Pizzeria\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Pizzeria\obj\Debug\MainWindow.baml" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria.csproj.CopyComplete" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria.csproj.CoreCompileInputs.cache" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria.csproj.GenerateResource.cache" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria.csprojAssemblyReference.cache" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria_MarkupCompile.cache" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria_MarkupCompile.i.cache" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria_MarkupCompile.i.lref" />
+    <None Include="Pizzeria\obj\Debug\Pizzeria_MarkupCompile.lref" />
+    <None Include="Pizzeria\obj\Debug\UserControlDelivery.baml" />
+    <None Include="Pizzeria\obj\Debug\UserControlEatin.baml" />
+    <None Include="Pizzeria\obj\Debug\UserControlHome.baml" />
+    <None Include="Pizzeria\packages.config" />
+    <None Include="Pizzeria\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\MaterialDesignColors.1.1.1\lib\net45\MaterialDesignColors.dll" />
+    <Content Include="packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="packages\MaterialDesignThemes.2.5.0.1205\lib\net45\MaterialDesignThemes.Wpf.XML" />
+    <Content Include="Pizzeria\Assets\09-calabrese-tradizionale.jpg" />
+    <Content Include="Pizzeria\Assets\beef-1920x1080-steak-food-cooking-grill-vegetables-meal-meat-tomato-408.jpg" />
+    <Content Include="Pizzeria\Assets\burrito-chicken-close-up-461198.jpg" />
+    <Content Include="Pizzeria\Assets\cake-wallpapers-28219-7350184.jpg" />
+    <Content Include="Pizzeria\Assets\fruits-cake-food.jpg" />
+    <Content Include="Pizzeria\Assets\jl beetle pizza 5.jpg" />
+    <Content Include="Pizzeria\Assets\meal-wallpaper-full-hd-1920x1080-350771.jpg" />
+    <Content Include="Pizzeria\Assets\pizza delivery.jpg" />
+    <Content Include="Pizzeria\Assets\pizza-delivery.jpg" />
+    <Content Include="Pizzeria\Assets\Pizza-doce-de-Brigadeiro.jpg" />
+    <Content Include="Pizzeria\Assets\pizzabar.jpg" />
+    <Content Include="Pizzeria\Assets\sandwiches_delicious_meat_cheese_vegetables_71435_1920x1080.jpg" />
+    <Content Include="Pizzeria\Assets\size_960_16_9_pizza2.jpg" />
+    <Content Include="Pizzeria\bin\Debug\MaterialDesignColors.dll" />
+    <Content Include="Pizzeria\bin\Debug\MaterialDesignThemes.Wpf.dll" />
+    <Content Include="Pizzeria\bin\Debug\MaterialDesignThemes.Wpf.pdb" />
+    <Content Include="Pizzeria\bin\Debug\MaterialDesignThemes.Wpf.xml" />
+    <Content Include="Pizzeria\bin\Debug\Pizzeria.exe" />
+    <Content Include="Pizzeria\bin\Debug\Pizzeria.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pizzeria\bin\Debug\Pizzeria.pdb" />
+    <Content Include="Pizzeria\bin\Debug\Pizzeria_log.ldf">
+      <DependentUpon>Pizzeria.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pizzeria\obj\Debug\Pizzeria.csproj.FileListAbsolute.txt" />
+    <Content Include="Pizzeria\obj\Debug\Pizzeria.exe" />
+    <Content Include="Pizzeria\obj\Debug\Pizzeria.pdb" />
+    <Content Include="Pizzeria\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Pizzeria\Pizzeria.csproj" />
+    <Content Include="Pizzeria\Pizzeria.csproj.user" />
+    <Content Include="Pizzeria\Pizzeria.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Pizzeria\Pizzeria_log.ldf">
+      <DependentUpon>Pizzeria.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Badged.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\BaseTheme.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ButtonProgressAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Card.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Chip.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Clock.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ClockChoiceMadeEventArgs.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ClockItemButton.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ColorZone.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ColorZoneAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ComboBoxAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ComboBoxPopup.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\BrushRoundConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\BrushToRadialGradientBrushConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CalendarDateCoalesceConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\ArcEndPointConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\ArcSizeConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\LargeArcConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\LocalEx.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\RotateTransformCentreConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\RotateTransformConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\CircularProgressBar\StartPointConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ClockItemIsCheckedConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ClockLineConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\DrawerOffsetConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\EqualityToVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\HintProxyFabricConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ListViewItemContainerStyleConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\MathConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\MathMultipleConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\NotConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\NotZeroConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\NotZeroToVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\NullableDateTimeToCurrentDateConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\NullToVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\PointValueConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\RangeLengthConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\RangePositionConverterConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ShadowConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ShadowEdgeConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\ShadowInfo.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\SizeToRectConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\SnackbarMessageTypeConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\TextFieldHintVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Converters\TimeToVisibilityConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\CustomPopupPlacementCallbackHelper.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DataGridAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DateTimeEx.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogClosingEventArgs.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogClosingEventHandler.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogHost.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogHostEx.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogOpenedEventArgs.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogOpenedEventHandler.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DialogSession.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DpiHelper.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\DrawerHost.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Extensions.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Flipper.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\HintAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\HintProxyFabric.ComboBox.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\HintProxyFabric.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\HintProxyFabric.PasswordBox.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\HintProxyFabric.TextBox.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Icon.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\IconType.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\IHintProxy.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ISnackbarMessageQueue.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ListBoxAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ListSortDirectionIndicator.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ListViewAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\MaterialDataGridComboBoxColumn.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\MaterialDataGridTextColumn.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\MaterialDateDisplay.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\MessageQueueExtension.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\obj\AppVeyor\GeneratedInternalTypeHelper.g.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PackIcon.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PackIconDataFactory.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PackIconExtension.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PackIconKind.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Palette.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PaletteHelper.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Plane3D.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\PopupBox.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Properties\AssemblyInfo.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Properties\Resources.Designer.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Properties\Settings.Designer.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\RatingBar.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\RatingBarButton.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Ripple.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\RippleAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ScaleHost.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Screen.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ScrollViewerAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ShadowAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\SmartHint.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Snackbar.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\SnackbarMessage.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\SnackbarMessageEventArgs.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\SnackbarMessageQueue.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\SnackbarMessageQueueItem.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Spelling.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\StringExtensions.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\TextFieldAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ThemeAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\TimePicker.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ToggleButtonAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ToolTipAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\CircleWipe.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\FadeWipe.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\IndexedItemOffsetMultiplierExtension.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\ITransitionEffect.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\ITransitionEffectSubject.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\ITransitionWipe.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\IZIndexController.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\SlideDirection.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\SlideOutWipe.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\SlideWipe.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionEffect.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionEffectBase.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionEffectExtension.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionEffectKind.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionEffectTypeConverter.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\Transitioner.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionerSlide.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitionerSlideState.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitioningContent.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Transitions\TransitioningContentBase.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\TreeHelper.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\TreeViewAssist.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\Underline.cs" />
+    <Compile Include="packages\MaterialDesignThemes.2.5.0.1205\src\net45\ValidationAssist.cs" />
+    <Compile Include="Pizzeria\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzeria\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzeria\obj\Debug\App.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\App.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\MainWindow.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\Pizzeria_Content.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\Pizzeria_Content.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Pizzeria\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Pizzeria\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlDelivery.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlDelivery.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlEatin.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlEatin.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlHome.g.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlHome.g.i.cs" />
+    <Compile Include="Pizzeria\obj\Debug\UserControlReciept.g.i.cs" />
+    <Compile Include="Pizzeria\Properties\AssemblyInfo.cs" />
+    <Compile Include="Pizzeria\Properties\Resources.Designer.cs" />
+    <Compile Include="Pizzeria\Properties\Settings.Designer.cs" />
+    <Compile Include="Pizzeria\UserControlDelivery.xaml.cs">
+      <DependentUpon>UserControlDelivery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzeria\UserControlEatin.xaml.cs">
+      <DependentUpon>UserControlEatin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzeria\UserControlHome.xaml.cs">
+      <DependentUpon>UserControlHome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pizzeria\UserControlReciept.xaml.cs">
+      <DependentUpon>UserControlReciept.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Pizzeria\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pizzeria\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pizzeria\UserControlDelivery.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pizzeria\UserControlEatin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pizzeria\UserControlHome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pizzeria\UserControlReciept.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pizzeria\obj\Debug\Pizzeria.g.resources" />
+    <EmbeddedResource Include="Pizzeria\obj\Debug\Pizzeria.Properties.Resources.resources" />
+    <EmbeddedResource Include="Pizzeria\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Pizza Delivery System\v15\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
